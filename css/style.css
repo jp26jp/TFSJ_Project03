@@ -59,7 +59,7 @@ button {
 
 legend {
 	font-weight: 500;
-	padding-top: .5em;
+	padding-top: 1.5em;
 	border-top: 2px solid #679cb3;
 	margin-bottom: 1.125em;
 }
@@ -74,6 +74,7 @@ label {
 	color: #000;
 	display: block;
 	margin-bottom: .5em;
+    clear: both;
 }
 
 input,
@@ -111,6 +112,32 @@ button {
 
 button:hover {
 	background: #184c62;
+}
+
+.error {
+    margin-bottom: 0;
+}
+
+input.error {
+    border: 2px solid #F44336;
+}
+
+fieldset.error {
+    box-shadow: 0 0 0 2px #f44336
+}
+
+* + .error-text {
+    display: none;
+}
+
+.error + .error-text {
+    display: inherit;
+}
+
+.error-text {
+    font-size: 80%;
+    font-style: italic;
+    margin-bottom: 1.125em;
 }
 
 /* ================================= 
